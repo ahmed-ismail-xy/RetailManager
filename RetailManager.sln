@@ -5,6 +5,10 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.RetailManager", "API.RetailManager\API.RetailManager.csproj", "{5A7EF8A9-1738-49C4-8B60-3511CFF7491A}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Data.RetailManager", "Data.RetailManager\Data.RetailManager.sqlproj", "{759C27C4-BB43-4E9A-95EE-B3A91F188998}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.RetailManager", "WPF.RetailManager\WPF.RetailManager.csproj", "{009F525C-E2C0-4E57-B152-DF585A1D6562}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,16 @@ Global
 		{5A7EF8A9-1738-49C4-8B60-3511CFF7491A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A7EF8A9-1738-49C4-8B60-3511CFF7491A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A7EF8A9-1738-49C4-8B60-3511CFF7491A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{759C27C4-BB43-4E9A-95EE-B3A91F188998}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{759C27C4-BB43-4E9A-95EE-B3A91F188998}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{759C27C4-BB43-4E9A-95EE-B3A91F188998}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{759C27C4-BB43-4E9A-95EE-B3A91F188998}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{759C27C4-BB43-4E9A-95EE-B3A91F188998}.Release|Any CPU.Build.0 = Release|Any CPU
+		{759C27C4-BB43-4E9A-95EE-B3A91F188998}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{009F525C-E2C0-4E57-B152-DF585A1D6562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{009F525C-E2C0-4E57-B152-DF585A1D6562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{009F525C-E2C0-4E57-B152-DF585A1D6562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{009F525C-E2C0-4E57-B152-DF585A1D6562}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
