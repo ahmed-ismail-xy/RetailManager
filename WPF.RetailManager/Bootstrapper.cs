@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
+using System.Windows.Controls;
+using WPF.RetailManager.Helper;
 using WPF.RetailManager.ViewModels;
 
 namespace WPF.RetailManager
@@ -13,6 +15,11 @@ namespace WPF.RetailManager
         public Bootstrapper() 
         {
             Initialize();
+
+            ConventionManager.AddElementConvention<PasswordBox>(
+                PasswordBoxHelper.BoundPasswordProperty,
+                "Password",
+                "PasswordChanged");
         }
         protected override void Configure()
         {
@@ -20,7 +27,9 @@ namespace WPF.RetailManager
 
             _container
                 .Singleton<IWindowManager, WindowManager>()
-                .Singleton<IEventAggregator, EventAggregator>();
+                .Singleton<IEventAggregator, EventAggregator>()
+                .Singleton<IAPIHelper, APIHelper>();
+
 
             GetType().Assembly.GetTypes()
                 .Where(type => type.IsClass)
